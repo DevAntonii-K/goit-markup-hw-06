@@ -1,33 +1,45 @@
+/* MOBILE */
+
 .hero{
     margin: 0 auto;
-    padding: 188px 0;
+    padding: 72px 0;
     background-color: #2E2F42;
     background-image: linear-gradient(
     180deg,
     rgba(46, 47, 66, 0.7) 0%,
     rgba(46, 47, 66, 0.7) 100%
     ),
-    url('../images/hero-bg.jpg');
+    url('../images/hero-bg-sm.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1440px;
+    max-width: 320px;
+}
+
+@media(min-resolution:192dpi){
+    .hero{
+        background-image: linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%),
+        url('../images/hero-bg-sm@2x.jpg');
+    }
 }
 
 .hero > .container{
+    padding: 0 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
+    gap: 72px;
 }
 
 .hero > .container > .title{
-    max-width: 496px;
+    max-width: 216px;
     color:#ffffff;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
-    /* 60/56 */
+    line-height: 1.11;
 }
 
 .hero > .container > .button{
@@ -51,4 +63,59 @@
 
 .hero > .container > .button:focus{
     background-color: #404BBF;
+}
+
+/* TABLET */
+
+@media(min-width:768px){
+
+    .hero{
+        min-width: 768px;
+        padding: 112px 0;
+        background-image: linear-gradient(180deg,
+                    rgba(46, 47, 66, 0.7) 0%,
+                    rgba(46, 47, 66, 0.7) 100%),
+        url('../images/hero-bg-md.jpg');
+    }
+
+    @media(min-resolution:192dpi) {
+        .hero {
+            background-image: linear-gradient(180deg,
+                    rgba(46, 47, 66, 0.7) 0%,
+                    rgba(46, 47, 66, 0.7) 100%),
+                url('../images/hero-bg-md@2x.jpg');
+        }
+    }
+    
+    .hero > .container > .title {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+}
+
+/* DESKTOP */
+
+@media(min-width:1158px){
+    .hero {
+        padding: 188px 0;
+        background-image: linear-gradient(180deg,
+                rgba(46, 47, 66, 0.7) 0%,
+                rgba(46, 47, 66, 0.7) 100%),
+                url('../images/hero-bg-lg.jpg');
+        max-width: 1440px;
+    }
+
+    @media(min-resolution:192dpi) {
+        .hero {
+            background-image: linear-gradient(180deg,
+                    rgba(46, 47, 66, 0.7) 0%,
+                    rgba(46, 47, 66, 0.7) 100%),
+                url('../images/hero-bg-lg@2x.jpg');
+        }
+    }
+
+    .hero > .container {
+        gap: 48px;
+    }
 }
