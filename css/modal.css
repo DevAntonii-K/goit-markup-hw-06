@@ -274,6 +274,7 @@
     .modal{
         width: 408px;
         height: 582px;
+        padding: 24px;
     }
 }
 

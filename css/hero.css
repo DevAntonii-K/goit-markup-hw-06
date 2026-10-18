@@ -13,7 +13,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 320px;
+    max-width: 100%;
 }
 
 @media(min-resolution:192dpi){
@@ -85,6 +85,10 @@
                     rgba(46, 47, 66, 0.7) 100%),
                 url('../images/hero-bg-md@2x.jpg');
         }
+    }
+
+    .hero >.container{
+        gap: 36px;
     }
     
     .hero > .container > .title {
