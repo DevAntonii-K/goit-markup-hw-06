@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 72px;
 }
 
@@ -176,7 +177,8 @@
         row-gap: 72px;
         align-items: start;
         justify-content: start;
-        padding-left: 92px;
+        padding-left: 108px;
+        padding-right: 164px;
     }
 
     .footer > .container .footer-logo{
@@ -184,7 +186,7 @@
     }
 
     .footer-social >.social-text{
-        text-align-last: left;
+        text-align: left;
     }
 
     .subscription-form{
@@ -193,7 +195,7 @@
     }
 
     .subscription-text{
-        text-align-last: left;
+        text-align: left;
     }
 
     .subscription-form-field {
@@ -212,6 +214,7 @@
     .footer > .container{
         flex-wrap: nowrap;
         padding-left: 0;
+        padding-right: 0;
     }
 
     .subscription-form-wrapper{

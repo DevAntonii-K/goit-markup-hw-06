@@ -19,6 +19,7 @@
 
 .features-list-item{
     max-width: 100%;
+    width: 100%;
 }
 
 .subtitle {
@@ -80,6 +81,4 @@
     .features-list-item > .text {
         font-weight: 400;
     }
-
-
 }
